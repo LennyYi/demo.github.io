@@ -6,7 +6,7 @@ title: myBlog
 
 ---
 
-<h2>{{ page.title }}</h2>
+<h2>{{page.title}}</h2>
 
 <p>NewPage</p>
 
@@ -14,7 +14,7 @@ title: myBlog
 
 {% for post in site.posts %};
 
-<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{post.tit    le}}</a></li>
+<li>{{ post.date|date_to_string }} <a href="{{post.url}}">{{post.title}}</a></li>
 
 {% endfor %};
 
